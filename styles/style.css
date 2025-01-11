@@ -387,3 +387,28 @@ select {
 .subscription-container > .subscribe-button {
   border-radius: 0 9.6px 9.6px 0;
 }
+
+/* Footer style */
+footer {
+  background-color: #fff;
+  margin-top: 96px;
+  min-height: 271.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer>h1 {
+  font-size: 38.4px;
+}
+hr {
+  margin: 38.4px 192px;
+  border: none;
+  height: 2px;
+  background-color: rgba(14, 14, 14, 0.1);
+  width: 60%; 
+}
+.icon-container {
+  display: flex;
+  gap: 27.6px;
+}
