@@ -40,6 +40,9 @@ body {
 button {
   cursor: pointer;
 }
+button:hover {
+  transform: scale(1.1); 
+}
 
 .btn-primary {
   background-color: #006A50;
@@ -51,6 +54,7 @@ button {
   max-width: 324px;
   cursor: pointer;
 }
+
 input {
   font-family: "Fira Sans", serif;
 }
@@ -147,6 +151,7 @@ main {
   border: 1px solid rgba(14, 14, 14, 0.15);
 }
 
+
 .description {
   color: rgba(14, 14, 14, 0.7);
   font-size: 19.2px;
@@ -202,13 +207,15 @@ main {
 
 
 #vision .quote {
+  background-image: url("../assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 1.2% 20%;
   display: flex;
   flex-direction: column;
   margin: -57.6px 0 96px;
   padding: 57.6px 28.8px;
   border: 1px solid rgba(14, 14, 14, 0.15);
 }
-
 
 .quote-description {
   color: rgba(14, 14, 14, 0.8);
@@ -324,6 +331,12 @@ select {
   font-weight: 700;
   font-size: 48px;
   color: rgba(14, 14, 14, 0.8);
+  cursor: pointer;
+}
+
+#donate .card:hover {
+  color: white;
+  background-color:rgba(0, 106, 80, 1);
 }
 
 #donate .bg-primary {
@@ -373,7 +386,7 @@ select {
 
 }
 
-.subscription-container > input {
+.subscription-container>input {
   background-color: #fff;
   padding-left: 48px;
   min-width: 720px;
@@ -381,10 +394,12 @@ select {
   border: none;
   border-radius: 9.6px 0 0 9.6px;
 }
-.subscription-container > input::placeholder {
+
+.subscription-container>input::placeholder {
   color: rgba(14, 14, 14, 0.3);
 }
-.subscription-container > .subscribe-button {
+
+.subscription-container>.subscribe-button {
   border-radius: 0 9.6px 9.6px 0;
 }
 
@@ -398,16 +413,19 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 footer>h1 {
   font-size: 38.4px;
 }
+
 hr {
   margin: 38.4px 192px;
   border: none;
   height: 2px;
   background-color: rgba(14, 14, 14, 0.1);
-  width: 60%; 
+  width: 60%;
 }
+
 .icon-container {
   display: flex;
   gap: 27.6px;
