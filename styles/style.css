@@ -40,8 +40,9 @@ body {
 button {
   cursor: pointer;
 }
+
 button:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .btn-primary {
@@ -49,7 +50,7 @@ button:hover {
   padding: 20.4px 40.8px;
   color: white;
   border-radius: 9.6px;
-  font-size: 21.6px;
+  font-size: 1.35rem;
   border: none;
   max-width: 324px;
   cursor: pointer;
@@ -67,8 +68,9 @@ nav {
   margin: 28.8px 192px 52.8px;
 }
 
-nav>h1 {
-  font-size: 38.4px;
+nav>h1,
+footer>h1 {
+  font-size: 2.4rem;
   color: #0E0E0E;
 }
 
@@ -77,7 +79,7 @@ nav>h1 {
   color: #006A50;
   border: 1px solid #006A50;
   border-radius: 9.6px;
-  font-size: 21.6px;
+  font-size: 1.35rem;
   cursor: pointer;
 }
 
@@ -92,12 +94,11 @@ main {
   justify-content: space-between;
   align-items: center;
   border-radius: 28.8px;
-  min-height: 672px;
-  padding: 0 115px;
+  padding: 120px 115px;
 }
 
 #hero>img {
-  min-width: 568.84px;
+  width: 100%;
 }
 
 #hero .content {
@@ -109,14 +110,14 @@ main {
 
 .hero-subtitle {
   margin-bottom: 19.2px;
-  font-size: 28.8px;
+  font-size: 1.8rem;
   color: rgba(14, 14, 14, 0.5);
 }
 
 .hero-title {
   margin-bottom: 28.8px;
   padding-right: 10px;
-  font-size: 67.2px;
+  font-size: 4.2rem;
   color: #0E0E0E;
 }
 
@@ -126,13 +127,13 @@ main {
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 3rem;
   color: #0E0E0E;
 }
 
 .subtitle {
   color: rgba(14, 14, 14, 0.8);
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 28.8px 0 14.2px;
 }
 
@@ -154,7 +155,7 @@ main {
 
 .description {
   color: rgba(14, 14, 14, 0.7);
-  font-size: 19.2px;
+  font-size: 1.2rem;
   line-height: 28.8px;
 }
 
@@ -209,7 +210,7 @@ main {
 #vision .quote {
   background-image: url("../assets/quote-bg.png");
   background-repeat: no-repeat;
-  background-position: 1.2% 20%;
+  background-position: 2% 18%;
   display: flex;
   flex-direction: column;
   margin: -57.6px 0 96px;
@@ -240,21 +241,24 @@ main {
   margin: 28.8px 0 96px;
 }
 
-table {
+#opinion>.content>table {
+  width: 100%;
   border-collapse: collapse;
-  min-width: 1444px;
 }
 
 th,
 td {
   text-align: left;
   padding: 28.8px;
-  font-size: 19.2px;
   border: 1px solid rgba(14, 14, 14, 0.15);
 }
 
+td {
+  font-size: 1.2rem;
+}
+
 th {
-  font-size: 24px;
+  font-size: 1.5rem;
   border: none;
 }
 
@@ -263,7 +267,7 @@ select {
   background-color: #C6E4D6;
   border-radius: 4.8px;
   padding: 12px 16.8px;
-  font-size: 19.2px;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
 }
@@ -284,16 +288,17 @@ select {
 }
 
 #news .card>img {
-  min-width: 489.6px;
+  /* min-width: 489.6px; */
+  width: 100%;
   border-radius: 28.8px;
 }
 
 #news .content>img {
-  min-width: 160px;
+  width: 20%;
 }
 
 #news .card-title {
-  font-size: 38.4px;
+  font-size: 2.4rem;
   color: rgba(14, 14, 14, 0.8);
   margin-bottom: 14.4px;
 }
@@ -329,14 +334,14 @@ select {
   padding: 48px;
   flex: 0 0 auto;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   color: rgba(14, 14, 14, 0.8);
   cursor: pointer;
 }
 
 #donate .card:hover {
   color: white;
-  background-color:rgba(0, 106, 80, 1);
+  background-color: rgba(0, 106, 80, 1);
 }
 
 #donate .bg-primary {
@@ -346,8 +351,9 @@ select {
 #donate input {
   background-color: #fff;
   border: 1px solid rgba(14, 14, 14, 0.15);
-  min-width: 1238.4px;
+  width: 80%;
   min-height: 76.8px;
+  /* height: 100%; */
   text-align: center;
   font-size: 24px;
   color: rgb(14, 14, 14);
@@ -383,13 +389,15 @@ select {
 .subscription-container {
   margin: 28.8px 0;
   display: flex;
-
+  width: 100%;
+  justify-content: center;
 }
 
 .subscription-container>input {
   background-color: #fff;
-  padding-left: 48px;
-  min-width: 720px;
+  padding-left: 40px;
+  /* min-width: 720px; */
+  width: 100%;
   min-height: 66px;
   border: none;
   border-radius: 9.6px 0 0 9.6px;
@@ -414,9 +422,6 @@ footer {
   align-items: center;
 }
 
-footer>h1 {
-  font-size: 38.4px;
-}
 
 hr {
   margin: 38.4px 192px;
@@ -429,4 +434,322 @@ hr {
 .icon-container {
   display: flex;
   gap: 27.6px;
+}
+
+/* For Large device (768px to 992px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    margin: 0 30px;
+  }
+
+  nav {
+    margin: 20px 30px;
+
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 50px;
+  }
+
+  #hero>img {
+    width: 60%;
+  }
+
+  #pillars .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #vision .card-container {
+    flex-direction: column;
+  }
+
+  #vision .card {
+    padding: 20px 30px;
+  }
+
+  #vision .quote {
+    background-position: 5.2% 16%;
+  }
+
+  #news .card {
+    flex-direction: column;
+  }
+
+  #news .reverse-card {
+    flex-direction: column-reverse;
+  }
+
+  #news .content>img {
+    width: 40%;
+  }
+
+  #donate .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #newsletter {
+    padding: 40px 15px;
+  }
+
+  .newsletter-description {
+    padding: 30px;
+  }
+
+  .subscription-container {
+    width: 95%;
+  }
+
+}
+
+/* For Medium device (576px to 768px) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  main {
+    margin: 0 30px;
+  }
+
+  nav {
+    margin: 20px 30px;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  #hero>img {
+    width: 80%;
+  }
+
+  #pillars .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #vision .card-container {
+    flex-direction: column;
+  }
+
+  #vision .card {
+    padding: 20px 30px;
+  }
+
+  #vision .quote {
+    background-position: 5.2% 16%;
+  }
+
+  #news .card {
+    flex-direction: column;
+  }
+
+  #news .reverse-card {
+    flex-direction: column-reverse;
+  }
+
+  #news .content>img {
+    width: 40%;
+  }
+
+  #donate .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #donate .card {
+    font-size: 2rem;
+  }
+
+  #newsletter {
+    padding: 40px 15px;
+  }
+
+  .newsletter-description {
+    padding: 30px;
+  }
+
+  .subscription-container {
+    width: 85%;
+  }
+
+}
+
+/* For Small device (<= 576px) */
+@media screen and (max-width: 576px) {
+  main {
+    margin: 0 20px;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 20px 25px;
+  }
+
+  nav {
+    margin: 20px;
+  }
+
+  .nav-btn {
+    padding: 10px 20px;
+  }
+
+  nav>h1,
+  footer>h1 {
+    font-size: 1.5rem;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  #hero>img {
+    width: 100%;
+  }
+
+  #pillars {
+    margin: 60px 0 0;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .card-container {
+    gap: 10px;
+    margin: 20px 0 60px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .card-button {
+    margin: 15px 0 0;
+  }
+
+  .subtitle {
+    margin: 15px 0 8px;
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: none;
+  }
+
+  #pillars .card-container {
+    flex-direction: column;
+  }
+
+  #vision .card-container {
+    flex-direction: column;
+  }
+
+  #vision .card {
+    padding: 20px 30px;
+  }
+
+  #vision .quote {
+    background-position: 5.2% 16%;
+    margin: 0 0 60px;
+  }
+
+  #opinion>.content {
+    padding: 20px;
+    margin: 20px 0 60px;
+  }
+
+  th {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  select {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+
+  #news .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #news .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  #news .reverse-card {
+    flex-direction: column-reverse;
+  }
+
+  #news .content>img {
+    width: 40%;
+  }
+
+  #news .description {
+    margin: 5px 0 5px;
+  }
+
+  #donate .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #donate .card {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #donate>p {
+    font-size: 1.1rem;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  #newsletter .section-title {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-description {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  .subscription-container {
+    width: 100%;
+  }
+
+  .subscription-container>input {
+    padding-left: 20px;
+  }
+
 }
